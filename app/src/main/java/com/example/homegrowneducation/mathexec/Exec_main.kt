@@ -1,4 +1,4 @@
-package com.example.homegrownEducation.mathexec
+package com.example.homegrowneducation.mathexec
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,7 +9,7 @@ import com.example.homegrowneducation.R
 class Exec_main : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_exec_page)
+        setContentView(R.layout.exc_main)
 
         val Eadd = findViewById<ImageView>(R.id.Eadd)
         val Eminus = findViewById<ImageView>(R.id.Eminus)

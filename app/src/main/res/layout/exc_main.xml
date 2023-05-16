@@ -7,11 +7,23 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="#FABC42"
-tools:context="com.example.homegrownEducation.mathexec.Exec_main">
+tools:context="com.example.homegrowneducation.mathexec.Exec_main">
+
+    <ImageView
+        android:id="@+id/Ereturn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="start|left"
+        android:src="@drawable/replay"
+        />
 
     <TextView
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="75dp"
+        android:layout_marginTop="130dp"
         android:text="Exercise"
         android:textSize="55dp"
         android:textStyle="bold"
@@ -61,5 +73,6 @@ tools:context="com.example.homegrownEducation.mathexec.Exec_main">
             android:layout_width="80dp"
             android:layout_height="80dp"/>
     </LinearLayout>
+
 
 </LinearLayout>

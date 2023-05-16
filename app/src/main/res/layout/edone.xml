@@ -5,7 +5,6 @@
     android:orientation="vertical"
     android:gravity="center"
     android:layout_gravity="center" >
-
     <TextView
         android:id="@+id/Qend1"
         android:layout_width="wrap_content"

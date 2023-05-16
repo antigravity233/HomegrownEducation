@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Course_1">
+    tools:context=".Course_3">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -26,20 +26,20 @@
 
         <ImageButton
             android:id="@+id/course_back_button"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:alpha="0.75"
             android:background="@drawable/course_back_shape"
             android:contentDescription="back" />
 
         <ImageView
             android:id="@+id/course_back_icon"
-            android:layout_width="30dp"
-            android:layout_height="29.3dp"
+            android:layout_width="40dp"
+            android:layout_height="39.3dp"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="25dp"
             android:contentDescription="back_icon"
             android:src="@drawable/back_icon" />
 

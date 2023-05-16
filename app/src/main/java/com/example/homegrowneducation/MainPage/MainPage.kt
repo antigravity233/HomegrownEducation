@@ -3,13 +3,13 @@ package com.example.homegrowneducation.MainPage
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import androidx.navigation.findNavController
-import com.example.homegrownEducation.mathexec.Exec_main
+import android.widget.TextView
+import android.widget.Toast
 import com.example.homegrownEducation.mathquiz.Quiz_Main
 import com.example.homegrowneducation.R
 import com.example.homegrowneducation.course.Course_main
 import com.example.homegrowneducation.databinding.MainPageBinding
+import com.example.homegrowneducation.mathexec.Exec_main
 import com.google.firebase.auth.FirebaseAuth
 
 class MainPage : AppCompatActivity() {
@@ -23,6 +23,16 @@ class MainPage : AppCompatActivity() {
         setContentView(binding.root)
 
         auth = FirebaseAuth.getInstance()
+
+        val user = FirebaseAuth.getInstance().currentUser
+        val displayName = user?.displayName
+
+        if (displayName != null) {
+            val textView = findViewById<TextView>(R.id.username)
+            textView.text = displayName.toString()
+        } else {
+            Toast.makeText(this, "Display name not set", Toast.LENGTH_SHORT).show()
+        }
 
         binding.quizArrow.setOnClickListener{
             val intent = Intent(this, Quiz_Main::class.java)

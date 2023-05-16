@@ -13,17 +13,16 @@ import java.lang.Exception
 import kotlin.random.Random
 
 class Quiz_Page : AppCompatActivity() {
-
     var QTimeTextView :TextView? =null
     var QQuesText :TextView? =null
     var QAlertTextView :TextView? =null
     var QScoreTextView :TextView? =null
     var QFinalScoreTextView :TextView? =null
 
-    var Qbutton0 :Button? =null
-    var Qbutton1 :Button? =null
-    var Qbutton2 :Button? =null
-    var Qbutton3 :Button? =null
+    lateinit var Qbutton0: Button
+    lateinit var Qbutton1: Button
+    lateinit var Qbutton2: Button
+    lateinit var Qbutton3: Button
 
     var countDownTimer: CountDownTimer?=null
     var random : Random = Random
@@ -145,8 +144,8 @@ class Quiz_Page : AppCompatActivity() {
                 openDilog()
             }
 
-             private fun openDilog(){
-               val  inflater = LayoutInflater.from(this@Quiz_Page)
+            private fun openDilog(){
+                val  inflater = LayoutInflater.from(this@Quiz_Page)
                 val winDialog = inflater.inflate(R.layout.qwin,null)
                 QFinalScoreTextView =winDialog.findViewById(R.id.QFinalScoreTextView)
                 val QbtnPlayagin = winDialog.findViewById<Button>(R.id.QPlayAgain)
@@ -158,9 +157,9 @@ class Quiz_Page : AppCompatActivity() {
                 Qback.setOnClickListener{ onBackPressed() }
                 val showDialog = dialog.create()
                 showDialog.show()
-                 QbtnPlayagin.setOnClickListener{
-                     PlayAgain(it)
-                     showDialog.dismiss() }
+                QbtnPlayagin.setOnClickListener{
+                    PlayAgain(it)
+                    showDialog.dismiss() }
 
             }
         }

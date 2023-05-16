@@ -6,7 +6,7 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.homegrownEducation.course.MainActivity">
+    tools:context="com.example.homegrowneducation.Intro">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/myNavHostFragment"
@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         app:defaultNavHost="true"
         app:navGraph="@navigation/navigation"
-        tools:layout="@layout/main_page" />
+        tools:layout="@layout/intro" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

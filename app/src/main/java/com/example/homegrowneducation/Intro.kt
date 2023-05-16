@@ -4,8 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.homegrowneducation.MainPage.MainPage
-import com.example.homegrowneducation.LoginRegister.LoginActivity
-import com.example.homegrowneducation.LoginRegister.RegisterAcitivity
+import com.example.homegrowneducation.loginRegister.LoginActivity
+import com.example.homegrowneducation.loginRegister.RegisterAcitivity
 import com.example.homegrowneducation.databinding.IntroBinding
 import com.google.firebase.auth.FirebaseAuth
 

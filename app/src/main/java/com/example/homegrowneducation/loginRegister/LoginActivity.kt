@@ -1,4 +1,4 @@
-package com.example.homegrowneducation.LoginRegister
+package com.example.homegrowneducation.loginRegister
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.example.homegrowneducation.MainPage.MainPage
+import com.example.homegrowneducation.MainPage.MyAccountActivity
 import com.example.homegrowneducation.R
 import com.example.homegrowneducation.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -77,7 +78,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, RegisterAcitivity::class.java))
         }
         binding.tvforgotpass.setOnClickListener {
-            startActivity(Intent(this, ResetPasswordActivity::class.java))
+            startActivity(Intent(this, MyAccountActivity::class.java))
         }
     }
     private fun showTextMinimalAlert(isNotValid: Boolean, text: String){

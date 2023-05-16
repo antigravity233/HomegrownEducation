@@ -4,7 +4,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        tools:context=".LoginRegister.LoginActivity" >
+        tools:context=".loginRegister.LoginActivity" >
 
         <RelativeLayout
             android:id="@+id/page_login_container"
@@ -23,7 +23,7 @@
                 android:contentDescription="homegrown_education_logo_removebg_preview_1"
                 android:src="@drawable/homegrown_education_logo_removebg_preview_1" />
 
-            <RelativeLayout
+            <androidx.cardview.widget.CardView
                 android:id="@+id/login"
                 android:layout_width="match_parent"
                 android:layout_height="610dp"
@@ -51,29 +51,23 @@
 
                     <EditText
                         android:id="@+id/etloginemail"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
                         android:inputType="textEmailAddress"
+                        android:hint="@string/yourname_gmail_com_string"
+                        android:textColorHint="@color/username_ek1_color"
                         android:src="@drawable/card" />
 
                     <ImageView
                         android:id="@+id/vector"
                         android:layout_width="16.61dp"
                         android:layout_height="15.2dp"
-                        android:layout_marginStart="19dp"
+                        android:layout_marginStart="250dp"
                         android:layout_marginTop="18dp"
                         android:contentDescription="vector"
                         android:src="@drawable/vector_ek1" />
 
-                    <TextView
-                        android:id="@+id/username_ek1"
-                        android:layout_width="229.16499996185dp"
-                        android:layout_height="30.164999961853dp"
-                        android:layout_marginLeft="55dp"
-                        android:layout_marginTop="15dp"
-                        android:text="@string/your_email_address"
-                        android:textColor="@color/username_ek1_color"
-                        android:textSize="14.33sp" />
+
 
                 </RelativeLayout>
 
@@ -98,26 +92,18 @@
                         android:id="@+id/etloginpassword"
                         android:layout_width="300dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/card" />
+                        android:src="@drawable/card"
+                        android:hint="@string/password_ek1_string"
+                        android:textColorHint="@color/username_ek1_color" />
 
                     <ImageView
                         android:id="@+id/key"
                         android:layout_width="16.61dp"
                         android:layout_height="15.2dp"
-                        android:layout_marginStart="19dp"
+                        android:layout_marginStart="250dp"
                         android:layout_marginTop="18dp"
                         android:contentDescription="vector"
                         android:src="@drawable/vector_ek3" />
-
-                    <TextView
-                        android:id="@+id/password_ek1"
-                        android:layout_width="229.16499996185dp"
-                        android:layout_height="30.164999961853dp"
-                        android:layout_marginLeft="55dp"
-                        android:layout_marginTop="15dp"
-                        android:text="@string/password_ek1_string"
-                        android:textColor="@color/username_ek1_color"
-                        android:textSize="14.33sp" />
 
                 </RelativeLayout>
 
@@ -158,8 +144,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center"
-                    android:layout_marginLeft="60dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="00dp"
+                    android:layout_marginTop="0dp"
                     android:gravity="center"
                     android:text="@string/title_string"
                     android:textColor="@color/title_color"
@@ -167,7 +153,7 @@
                     android:textStyle="bold" />
 
 
-            </RelativeLayout>
+            </androidx.cardview.widget.CardView>
 
         </RelativeLayout>
 

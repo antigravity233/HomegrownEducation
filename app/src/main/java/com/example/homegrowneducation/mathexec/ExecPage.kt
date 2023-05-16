@@ -1,4 +1,4 @@
-package com.example.homegrownEducation.mathexec
+package com.example.homegrowneducation.mathexec
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -21,10 +21,10 @@ class ExecPage : AppCompatActivity() {
     var EScoreTextView :TextView? =null
     var EFinalScoreTextView :TextView? =null
 
-    var Ebutton0 :Button? =null
-    var Ebutton1 :Button? =null
-    var Ebutton2 :Button? =null
-    var Ebutton3 :Button? =null
+    lateinit var Ebutton0: Button
+    lateinit var Ebutton1: Button
+    lateinit var Ebutton2: Button
+    lateinit var Ebutton3: Button
 
     var countDownTimer: CountDownTimer?=null
     var random : Random = Random
@@ -33,7 +33,7 @@ class ExecPage : AppCompatActivity() {
     var correctans =0
     var ans = ArrayList<Int>()
     var pt =0
-    var totalQuestion = 0
+    var totalQuestion = 20
     var cals= ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,7 +53,7 @@ class ExecPage : AppCompatActivity() {
         Ebutton2 = findViewById<Button>(R.id.Ebutton2)
         Ebutton3 = findViewById<Button>(R.id.Ebutton3)
 
-      start()
+        start()
     }
 
     fun NextQuestion(cal:String) {
@@ -117,29 +117,28 @@ class ExecPage : AppCompatActivity() {
     }
 
     fun QoptionSelct(view: View?){
-        totalQuestion++
-        if (totalQuestion == 20){
+        pt++
+        if (pt == 20){
             openDilog()
         }else{
-        if (correctans.toString() == view!!.tag.toString()){
-            pt++
-            EAlertTextView!!.text= "Correct"
-        }else{
-            EAlertTextView!!.text= "Wrong"
-        }
-        EScoreTextView!!.text = "$pt/$totalQuestion"
-        NextQuestion(cals)
-    }}
+            if (correctans.toString() == view!!.tag.toString()){
+                EAlertTextView!!.text= "Correct"
+            }else{
+                EAlertTextView!!.text= "Wrong"
+            }
+            EScoreTextView!!.text = "$pt/$totalQuestion"
+            NextQuestion(cals)
+        }}
 
     fun PlayAgain(view:View?){
         pt=0
-        totalQuestion=0
+        totalQuestion=20
         EScoreTextView!!.text="$pt/$totalQuestion"
     }
 
     private fun start() {
-            NextQuestion(cals)
-            }
+        NextQuestion(cals)
+    }
 
     private fun openDilog(){
         val  inflater = LayoutInflater.from(this@ExecPage)
@@ -157,7 +156,7 @@ class ExecPage : AppCompatActivity() {
         QbtnPlayagin.setOnClickListener{
             PlayAgain(it)
             showDialog.dismiss() }
-        }
+    }
 
 
 }
