@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "390278970596",
+    "project_id": "homegrowneducation-a18f3",
+    "storage_bucket": "homegrowneducation-a18f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390278970596:android:8baf5d9f97df78d9e940f1",
+        "android_client_info": {
+          "package_name": "com.example.homegrowneducation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390278970596-q0kfiusrgb22mg396fdlf31bb2a42ms1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf7S0DyWdXOHoRBJN2LpGXkMzKnnTvawg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390278970596-q0kfiusrgb22mg396fdlf31bb2a42ms1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
