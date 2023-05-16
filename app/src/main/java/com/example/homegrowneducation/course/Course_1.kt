@@ -1,4 +1,4 @@
-package com.example.homegrownEducation.course
+package com.example.homegrowneducation.course
 
 import android.net.Uri
 import android.os.Bundle

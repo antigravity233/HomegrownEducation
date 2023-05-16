@@ -5,13 +5,16 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
+import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
+import androidx.navigation.findNavController
 import com.example.homegrowneducation.R
 
 import com.example.homegrowneducation.databinding.ActivityMyaccountBinding
 import com.example.homegrowneducation.loginRegister.LoginActivity
+import com.example.homegrowneducation.mathquiz.Quiz_Page
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.UserProfileChangeRequest
 import com.jakewharton.rxbinding2.widget.RxTextView
@@ -33,6 +36,11 @@ class MyAccountActivity : AppCompatActivity() {
 
         val user = FirebaseAuth.getInstance().currentUser
         val displayName = user?.displayName
+
+        binding.backbtn.setOnClickListener{
+            val intent = Intent(this, ProfilePage::class.java)
+            startActivity(intent)
+        }
 
         binding.btnchangename.setOnClickListener{
             val newname = binding.etnewname.text.toString().trim()

@@ -5,11 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
-import com.example.homegrownEducation.mathquiz.Quiz_Main
+import com.example.homegrowneducation.mathquiz.Quiz_Main
 import com.example.homegrowneducation.R
 import com.example.homegrowneducation.course.Course_main
 import com.example.homegrowneducation.databinding.MainPageBinding
 import com.example.homegrowneducation.mathexec.Exec_main
+import com.example.homegrowneducation.puzzle.Puzzle_main
 import com.google.firebase.auth.FirebaseAuth
 
 class MainPage : AppCompatActivity() {
@@ -39,7 +40,7 @@ class MainPage : AppCompatActivity() {
             startActivity(intent)
         }
         binding.puzzleArrow.setOnClickListener {
-            val intent = Intent(this, Quiz_Main::class.java)
+            val intent = Intent(this, Puzzle_main::class.java)
             startActivity(intent)
         }
         binding.execArrow.setOnClickListener {

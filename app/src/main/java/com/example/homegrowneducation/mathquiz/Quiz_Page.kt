@@ -1,4 +1,4 @@
-package com.example.homegrownEducation.mathquiz
+package com.example.homegrowneducation.mathquiz
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

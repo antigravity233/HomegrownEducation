@@ -223,6 +223,10 @@
         android:name="com.example.homegrowneducation.mainPage.MainPage"
         android:label="intro"
         tools:layout="@layout/main_page" />
+    <activity
+        android:id="@+id/resetPasswordActivity2"
+        android:name="com.example.homegrowneducation.ResetPasswordActivity"
+        android:label="ResetPasswordActivity" />
 
 
 </navigation>
