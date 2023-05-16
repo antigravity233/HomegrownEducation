@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainPage.MyAccountActivity">
+    tools:context=".mainPage.myAccountActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -41,7 +41,7 @@
         <androidx.cardview.widget.CardView
     android:layout_width="353dp"
     android:layout_height="550dp"
-    tools:context=".MainPage.MyAccountActivity"
+    tools:context=".mainPage.MyAccountActivity"
             android:backgroundTint="@color/white"
             android:layout_marginStart="20dp"
             android:layout_marginTop="200dp">
@@ -66,11 +66,10 @@
     <EditText
         android:id="@+id/etnewname"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="text"
         android:hint="Enter your new name"
-        android:text=""
         android:layout_marginTop="150dp"
         android:layout_marginStart="30dp" />
 
@@ -79,27 +78,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reset"
-        android:layout_marginTop="150dp"
-        android:layout_marginStart="250dp"/>
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="30dp"/>
 
             <TextView
                 android:id="@+id/tvchangepassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Reset Password"
-                android:layout_marginTop="250dp"
+                android:layout_marginTop="300dp"
                 android:layout_marginStart="30dp"
                 android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/etresetemail"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:ems="10"
                 android:inputType="text"
                 android:hint="Enter your email address"
                 android:text=""
-                android:layout_marginTop="300dp"
+                android:layout_marginTop="350dp"
                 android:layout_marginStart="30dp" />
 
 
@@ -108,8 +107,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Reset"
-                android:layout_marginTop="300dp"
-                android:layout_marginStart="250dp"/>
+                android:layout_marginTop="400dp"
+                android:layout_marginStart="30dp"/>
 
 
 

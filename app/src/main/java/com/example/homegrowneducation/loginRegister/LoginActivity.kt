@@ -6,8 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.core.content.ContextCompat
-import com.example.homegrowneducation.MainPage.MainPage
-import com.example.homegrowneducation.MainPage.MyAccountActivity
+import com.example.homegrowneducation.mainPage.MainPage
+import com.example.homegrowneducation.mainPage.MyAccountActivity
 import com.example.homegrowneducation.R
 import com.example.homegrowneducation.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth

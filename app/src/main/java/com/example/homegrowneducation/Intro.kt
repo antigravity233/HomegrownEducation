@@ -3,7 +3,7 @@ package com.example.homegrowneducation
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.homegrowneducation.MainPage.MainPage
+import com.example.homegrowneducation.mainPage.MainPage
 import com.example.homegrowneducation.loginRegister.LoginActivity
 import com.example.homegrowneducation.loginRegister.RegisterAcitivity
 import com.example.homegrowneducation.databinding.IntroBinding

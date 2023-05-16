@@ -26,7 +26,7 @@
             android:layout_height="630dp"
             android:layout_marginStart="0dp"
             android:layout_marginTop="200dp"
-            android:background="@drawable/login">
+            android:background="@color/white">
 
             <TextView
                 android:id="@+id/username_text"
@@ -45,7 +45,7 @@
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="90dp"
                     android:hint="@string/username_string"
-                    android:inputType="textEmailAddress"
+                    android:inputType="text"
                     android:src="@drawable/card"
                     android:textColorHint="@color/username_ek1_color"
                     android:textSize="14.33sp" />
@@ -67,8 +67,9 @@
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="160dp"
                     android:src="@drawable/card"
-                    android:text="@string/yourname_gmail_com_string"
-                    android:textColor="@color/username_ek1_color"
+                    android:hint="@string/yourname_gmail_com_string"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/username_ek1_color"
                     android:textSize="14.33sp" />
 
 
@@ -89,6 +90,7 @@
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="230dp"
                     android:hint="@string/password_ek2_string"
+                    android:inputType="textPassword"
                     android:src="@drawable/card"
                     android:textColorHint="@color/username_ek1_color"
                     android:textSize="14.33sp" />
@@ -113,12 +115,13 @@
                     android:layout_marginTop="300dp"
                     android:src="@drawable/card"
                     android:hint="@string/password_ek3_string"
+                    android:inputType="textPassword"
                     android:textColorHint="@color/username_ek1_color"
                     android:textSize="14.33sp"/>
 
             <Button
                 android:id="@+id/btnregisterpage"
-                android:layout_width="314dp"
+                android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="360dp"
@@ -133,7 +136,7 @@
                 android:layout_width="317dp"
                 android:layout_height="47dp"
                 android:layout_gravity="center_horizontal|center"
-                android:layout_marginLeft="31dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="410dp"
                 android:gravity="center"
                 android:text="@string/login_if_you_have_an_account"
@@ -145,7 +148,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="100dp"
+                android:layout_marginStart="80dp"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:text="@string/title_string2"

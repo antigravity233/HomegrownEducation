@@ -7,7 +7,7 @@
 
     <activity
         android:id="@+id/mainActivity"
-        android:name="com.example.homegrowneducation.MainPage.MainPage"
+        android:name="com.example.homegrowneducation.mainPage.MainPage"
         android:label="MainActivity"
         tools:layout="@layout/activity_main">
         <action
@@ -141,7 +141,7 @@
     </fragment>
     <activity
         android:id="@+id/exec_main"
-        android:name="com.example.homegrownEducation.mathexec.Exec_main"
+        android:name="com.example.homegrowneducation.mathexec.Exec_main"
         android:label="Exec_main"
         tools:layout="@layout/exc_main">
         <action
@@ -161,13 +161,14 @@
     </activity>
     <activity
         android:id="@+id/resetPasswordActivity"
-        android:name="com.example.homegrowneducation.MainPage.MyAccountActivity"
+        android:name="com.example.homegrowneducation.mainPage.MyAccountActivity"
         android:label="activity_reset_password"
         tools:layout="@layout/activity_reset_password" />
     <activity
         android:id="@+id/registerAcitivity"
         android:name="com.example.homegrowneducation.loginRegister.RegisterAcitivity"
-        android:label="RegisterAcitivity" />
+        android:label="RegisterAcitivity"
+        tools:layout="@layout/activity_register_acitivity"/>
     <activity
         android:id="@+id/loginActivity"
         android:name="com.example.homegrowneducation.loginRegister.LoginActivity"
@@ -175,7 +176,7 @@
         tools:layout="@layout/activity_login" />
     <activity
         android:id="@+id/execPage"
-        android:name="com.example.homegrownEducation.mathexec.ExecPage"
+        android:name="com.example.homegrowneducation.mathexec.ExecPage"
         android:label="activity_exec_page"
         tools:layout="@layout/activity_exec_page" />
     <activity
@@ -183,6 +184,45 @@
         android:name="com.example.homegrownEducation.mathquiz.Quiz_Page"
         android:label="activity_quiz_page"
         tools:layout="@layout/activity_quiz_page" />
+    <fragment
+        android:id="@+id/profilePage"
+        android:name="com.example.homegrowneducation.mainPage.ProfilePage"
+        android:label="activity_profile"
+        tools:layout="@layout/activity_profile" >
+        <action
+            android:id="@+id/action_profilePage_to_aboutUs"
+            app:destination="@id/aboutUs" />
+        <action
+            android:id="@+id/action_profilePage_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_profilePage_to_main_page"
+            app:destination="@id/main_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUs"
+        android:name="com.example.homegrowneducation.mainPage.AboutUs"
+        android:label="about_us"
+        tools:layout="@layout/about_us" >
+        <action
+            android:id="@+id/action_aboutUs_to_profilePage"
+            app:destination="@id/profilePage" />
+    </fragment>
+    <activity
+        android:id="@+id/intro"
+        android:name="com.example.homegrowneducation.Intro"
+        android:label="intro"
+        tools:layout="@layout/intro" />
+    <activity
+        android:id="@+id/main_page"
+        android:name="com.example.homegrowneducation.mainPage.MainPage"
+        android:label="intro"
+        tools:layout="@layout/main_page" />
+    <activity
+        android:id="@+id/myA"
+        android:name="com.example.homegrowneducation.mainPage.MainPage"
+        android:label="intro"
+        tools:layout="@layout/main_page" />
 
 
 </navigation>

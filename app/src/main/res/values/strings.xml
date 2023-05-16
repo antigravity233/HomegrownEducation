@@ -181,8 +181,5 @@ So, 16 = 3 × 5 + 1
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="aboutus_text">We, the home growing education team, built this application. When we created this programme, we hoped that everyone would have the opportunity to learn maths. It is because maths is becoming increasingly vital in our lives. We hope you like this app and learn something from it. I hope everything is fine with you.  --by Creaters</string>
 </resources>

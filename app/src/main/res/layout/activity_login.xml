@@ -23,14 +23,14 @@
                 android:contentDescription="homegrown_education_logo_removebg_preview_1"
                 android:src="@drawable/homegrown_education_logo_removebg_preview_1" />
 
-            <androidx.cardview.widget.CardView
+            <RelativeLayout
                 android:id="@+id/login"
                 android:layout_width="match_parent"
                 android:layout_height="610dp"
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="220dp"
                 android:contentDescription="login"
-                android:background="@drawable/login">
+                android:background="@color/white">
 
                 <TextView
                     android:id="@+id/email_text"
@@ -94,6 +94,7 @@
                         android:layout_height="50dp"
                         android:src="@drawable/card"
                         android:hint="@string/password_ek1_string"
+                        android:inputType="textPassword"
                         android:textColorHint="@color/username_ek1_color" />
 
                     <ImageView
@@ -111,9 +112,10 @@
                     android:id="@+id/tvforgotpass"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="200dp"
+                    android:layout_marginStart="150dp"
                     android:layout_marginTop="240dp"
-                    android:text="@string/forgot_password"/>
+                    android:text="@string/forgot_password"
+                    android:textSize="24sp"/>
 
 
                 <Button
@@ -129,31 +131,27 @@
 
                 <TextView
                     android:id="@+id/tvlogintoregister"
-                    android:layout_width="317dp"
-                    android:layout_height="47dp"
-                    android:layout_gravity="center_horizontal|center"
-                    android:layout_marginLeft="31dp"
-                    android:layout_marginTop="370dp"
-                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="380dp"
                     android:text="@string/haven_t_sign_up_yet__string"
                     android:textColor="@color/haven_t_sign_up_yet__color"
-                    android:textSize="24sp" />
+                    android:textSize="30sp" />
 
                 <TextView
                     android:id="@+id/title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center"
-                    android:layout_marginLeft="00dp"
-                    android:layout_marginTop="0dp"
-                    android:gravity="center"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="20dp"
                     android:text="@string/title_string"
                     android:textColor="@color/title_color"
                     android:textSize="36sp"
                     android:textStyle="bold" />
 
 
-            </androidx.cardview.widget.CardView>
+            </RelativeLayout>
 
         </RelativeLayout>
 

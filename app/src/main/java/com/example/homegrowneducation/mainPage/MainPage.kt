@@ -1,4 +1,4 @@
-package com.example.homegrowneducation.MainPage
+package com.example.homegrowneducation.mainPage
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

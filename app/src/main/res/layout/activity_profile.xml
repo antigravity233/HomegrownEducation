@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.homegrowneducation.MainPage.ProfilePage">
+    tools:context="com.example.homegrowneducation.mainPage.ProfilePage">
 
     <RelativeLayout android:id="@+id/main_page"
         android:layout_width="match_parent"
@@ -116,7 +116,7 @@
                 android:textStyle="bold"
                 android:text="About Us" />
 
-            <ImageView android:id="@+id/quiz_arrow"
+            <ImageView android:id="@+id/myAccount_arrow"
                 android:src="@drawable/main_arrow_left"
                 android:layout_marginTop="50dp"
                 android:layout_marginStart="260dp"
@@ -125,14 +125,14 @@
 
 
             <ImageView
-                android:id="@+id/exec_arrow2"
+                android:id="@+id/aboutUs_arrow"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="260dp"
                 android:layout_marginTop="240dp"
                 android:src="@drawable/main_arrow_left" />
 
-            <ImageView android:id="@+id/course_arrow"
+            <ImageView android:id="@+id/logout_arrow"
                 android:src="@drawable/main_arrow_left"
                 android:layout_marginTop="340dp"
                 android:layout_marginStart="260dp"
