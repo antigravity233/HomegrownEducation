@@ -85,7 +85,8 @@ class Puzzle_normal : Fragment() {
         setEdittext(edittext8)
         setEdittext(edittext9)
 
-        binding.rebuildButton.setOnClickListener{ buildPuzzle() }
+        binding.rebuildButton.setOnClickListener{ buildPuzzle(edittext1,edittext2,edittext3,
+            edittext4,edittext5,edittext6,edittext7,edittext8,edittext9) }
         binding.submitButton.setOnClickListener{
             congrat(edittext1,edittext2,edittext3,edittext4,edittext5,edittext6,edittext7,edittext8,edittext9)
         }
@@ -147,7 +148,7 @@ class Puzzle_normal : Fragment() {
             }
         }
 
-        buildPuzzle()
+        buildPuzzle(edittext1,edittext2,edittext3,edittext4,edittext5,edittext6,edittext7,edittext8,edittext9)
 
 
         return binding.root
@@ -155,7 +156,7 @@ class Puzzle_normal : Fragment() {
 
     private fun congrat(editText1: EditText,editText2: EditText,editText3: EditText,
                         editText4: EditText,editText5: EditText,editText6: EditText,
-                        editText7: EditText,editText8: EditText,editText9: EditText,){
+                        editText7: EditText,editText8: EditText,editText9: EditText){
         if (editText1.text.toString().equals(viewModel.cube_number[0].toString())) {
             viewModel.correct()
         }
@@ -184,6 +185,7 @@ class Puzzle_normal : Fragment() {
             viewModel.correct()
         }
 
+
         if( viewModel.cube_score == 3) {
             binding.congraText.visibility = View.VISIBLE
             Toast.makeText(activity, "Congradulation!!!", Toast.LENGTH_SHORT).show()
@@ -207,7 +209,7 @@ class Puzzle_normal : Fragment() {
                 setPositiveButton("SAVE TEXT",
                     DialogInterface.OnClickListener { dialog, id ->
                         textView.text = editText.text
-                        textView.setTextColor(Color.BLACK)
+                        textView.setTextColor(Color.RED)
                     })
                 setNegativeButton("CANCEL",
                     DialogInterface.OnClickListener { dialog, id ->
@@ -219,7 +221,9 @@ class Puzzle_normal : Fragment() {
 
     }
 
-    private fun buildPuzzle() {
+    private fun buildPuzzle(editText1: EditText,editText2: EditText,editText3: EditText,
+                            editText4: EditText,editText5: EditText,editText6: EditText,
+                            editText7: EditText,editText8: EditText,editText9: EditText) {
         binding.congraText.visibility =View.INVISIBLE
         viewModel.setCube()
         updateOperator()
@@ -235,6 +239,17 @@ class Puzzle_normal : Fragment() {
         Log.i("cube value7", binding.cube51.text.toString())
         Log.i("cube value8", binding.cube53.text.toString())
         Log.i("cube value9", binding.cube55.text.toString())
+
+        editText1.text = null
+        editText2.text = null
+        editText3.text = null
+        editText4.text = null
+        editText5.text = null
+        editText6.text = null
+        editText7.text = null
+        editText8.text = null
+        editText9.text = null
+
     }
 
     fun updateCubeNumber(){

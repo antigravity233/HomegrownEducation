@@ -85,7 +85,8 @@ class Puzzle_easy : Fragment() {
         setEdittext(edittext8)
         setEdittext(edittext9)
 
-        binding.rebuildButton.setOnClickListener{ buildPuzzle() }
+        binding.rebuildButton.setOnClickListener{ buildPuzzle(edittext1,edittext2,edittext3,
+            edittext4,edittext5,edittext6,edittext7,edittext8,edittext9) }
         binding.submitButton.setOnClickListener{
             congrat(edittext1,edittext2,edittext3,edittext4,edittext5,edittext6,edittext7,edittext8,edittext9)
         }
@@ -148,7 +149,7 @@ class Puzzle_easy : Fragment() {
             }
         }
 
-        buildPuzzle()
+        buildPuzzle(edittext1,edittext2,edittext3,edittext4,edittext5,edittext6,edittext7,edittext8,edittext9)
 
         return binding.root
     }
@@ -219,7 +220,9 @@ class Puzzle_easy : Fragment() {
 
     }
 
-    private fun buildPuzzle() {
+    private fun buildPuzzle(editText1: EditText,editText2: EditText,editText3: EditText,
+                            editText4: EditText,editText5: EditText,editText6: EditText,
+                            editText7: EditText,editText8: EditText,editText9: EditText) {
         binding.congraText.visibility =View.INVISIBLE
         viewModel.setCube()
         updateOperator()
@@ -235,6 +238,15 @@ class Puzzle_easy : Fragment() {
         Log.i("cube value7", binding.cube51.text.toString())
         Log.i("cube value8", binding.cube53.text.toString())
         Log.i("cube value9", binding.cube55.text.toString())
+
+        editText1.text = null
+        editText2.text = null
+        editText3.text = null
+        editText4.text = null
+        editText5.text = null
+        editText6.text = null
+        editText7.text = null
+        editText8.text = null
     }
 
     private fun updateCubeNumber(){

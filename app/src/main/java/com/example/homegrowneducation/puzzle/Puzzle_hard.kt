@@ -34,7 +34,7 @@ class Puzzle_hard : Fragment() {
         )
         viewModel = ViewModelProvider(this).get(PuzzleHardViewModel::class.java)
 
-        binding.rebuildButton.setOnClickListener { buildPuzzle() }
+
         binding.puzzleBackButton.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_hard_puzzle_to_puzzle_main)
         }
@@ -58,6 +58,12 @@ class Puzzle_hard : Fragment() {
         setEdittext(edittext7)
         setEdittext(edittext8)
         setEdittext(edittext9)
+
+        binding.rebuildButton.setOnClickListener{ buildPuzzle(edittext1,edittext2,edittext3,
+            edittext4,edittext5,edittext6,edittext7,edittext8,edittext9) }
+        binding.submitButton.setOnClickListener{
+            congrat(edittext1,edittext2,edittext3,edittext4,edittext5,edittext6,edittext7,edittext8,edittext9)
+        }
 
         val alertDialogBuilder1 = AlertDialog.Builder(context)
         val alertDialogBuilder2 = AlertDialog.Builder(context)
@@ -89,7 +95,8 @@ class Puzzle_hard : Fragment() {
         val alertDialog8 : AlertDialog = alertDialogBuilder8.create()
         val alertDialog9 : AlertDialog = alertDialogBuilder9.create()
 
-        binding.rebuildButton.setOnClickListener{ buildPuzzle() }
+        binding.rebuildButton.setOnClickListener{ buildPuzzle(edittext1,edittext2,edittext3,
+            edittext4,edittext5,edittext6,edittext7,edittext8,edittext9) }
         binding.submitButton.setOnClickListener{
             congrat(edittext1,edittext2,edittext3,edittext4,edittext5,edittext6,edittext7,edittext8,edittext9)
         }
@@ -152,14 +159,14 @@ class Puzzle_hard : Fragment() {
             }
         }
 
-        buildPuzzle()
+        buildPuzzle(edittext1,edittext2,edittext3,edittext4,edittext5,edittext6,edittext7,edittext8,edittext9)
 
         return binding.root
     }
 
     private fun congrat(editText1: EditText,editText2: EditText,editText3: EditText,
                         editText4: EditText,editText5: EditText,editText6: EditText,
-                        editText7: EditText,editText8: EditText,editText9: EditText,){
+                        editText7: EditText,editText8: EditText,editText9: EditText){
         if (editText1.text.toString().equals(viewModel.cube_number[0].toString())) {
             viewModel.correct()
         }
@@ -211,7 +218,7 @@ class Puzzle_hard : Fragment() {
                 setPositiveButton("SAVE TEXT",
                     DialogInterface.OnClickListener { dialog, id ->
                         textView.text = editText.text
-                        textView.setTextColor(Color.BLACK)
+                        textView.setTextColor(Color.RED)
                     })
                 setNegativeButton("CANCEL",
                     DialogInterface.OnClickListener { dialog, id ->
@@ -223,7 +230,9 @@ class Puzzle_hard : Fragment() {
 
     }
 
-    private fun buildPuzzle() {
+    private fun buildPuzzle(editText1: EditText,editText2: EditText,editText3: EditText,
+                            editText4: EditText,editText5: EditText,editText6: EditText,
+                            editText7: EditText,editText8: EditText,editText9: EditText) {
         binding.congraText.visibility = View.INVISIBLE
         viewModel.setCube()
         updateOperator()
@@ -239,6 +248,15 @@ class Puzzle_hard : Fragment() {
         Log.i("cube value7", binding.cube51.text.toString())
         Log.i("cube value8", binding.cube53.text.toString())
         Log.i("cube value9", binding.cube55.text.toString())
+
+        editText1.text = null
+        editText2.text = null
+        editText3.text = null
+        editText4.text = null
+        editText5.text = null
+        editText6.text = null
+        editText7.text = null
+        editText8.text = null
     }
 
     fun updateCubeNumber() {

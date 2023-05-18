@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-tools:context="com.example.homegrowneducation.mathexec.ExecPage">
+tools:context="com.example.homegrowneducation.mathexec.ExecPage"
+    android:background="#FABC42">
     <Button
         android:id="@+id/Ebutton0"
         android:layout_width="140dp"
@@ -38,7 +39,7 @@ tools:context="com.example.homegrowneducation.mathexec.ExecPage">
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EQuesText"
-        app:layout_constraintVertical_bias="0.101" />
+        app:layout_constraintVertical_bias="0.379" />
 
     <Button
         android:id="@+id/Ebutton2"
@@ -65,7 +66,7 @@ tools:context="com.example.homegrowneducation.mathexec.ExecPage">
         android:layout_height="105dp"
         android:layout_marginStart="240dp"
         android:layout_marginEnd="31dp"
-        android:layout_marginBottom="175dp"
+        android:layout_marginBottom="216dp"
         android:backgroundTint="#0E8c80"
         android:onClick="QoptionSelct"
         android:tag="3"
@@ -73,7 +74,7 @@ tools:context="com.example.homegrowneducation.mathexec.ExecPage">
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
