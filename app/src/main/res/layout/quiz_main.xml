@@ -6,17 +6,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#FABC42"
-    tools:context="com.example.homegrownEducation.mathquiz.Quiz_Main">
+    tools:context="com.example.homegrowneducation.mathquiz.Quiz_Main">
 
     <ImageView
         android:id="@+id/Ereturn"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="15dp"
         android:layout_gravity="start|left"
-        android:src="@drawable/replay"
-        />
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/replay" />
 
     <TextView
         android:gravity="center"

@@ -42,12 +42,12 @@
             <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/tvinfo"
                 android:layout_width="353dp"
-                android:layout_height="120dp"
+                android:layout_height="234dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="60dp"
                 android:text="@string/we_are_xxx_this_is_xxx_we_are_xxx_this_is_xxx_we_are_xxx_this_is_xxx_we_are_xxx_this_is_xxx_we_are_xxx_this_is_xxx"
                 android:textColor="@color/title_color"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
 
