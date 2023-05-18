@@ -35,6 +35,11 @@ class MainPage : AppCompatActivity() {
             Toast.makeText(this, "Display name not set", Toast.LENGTH_SHORT).show()
         }
 
+        binding.profileEk1.setOnClickListener{
+            val intent = Intent(this, ProfilePage::class.java)
+            startActivity(intent)
+        }
+
         binding.quizArrow.setOnClickListener{
             val intent = Intent(this, Quiz_Main::class.java)
             startActivity(intent)
