@@ -57,12 +57,5 @@ class MainPage : AppCompatActivity() {
             startActivity(intent)
         }
 
-        /*binding.btnlogout.setOnClickListener{
-            auth.signOut()
-            Intent(this, LoginActivity::class.java).also {
-                it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                startActivity(it)
-                Toast.makeText(this, "Logout Successfully", Toast.LENGTH_SHORT).show()
-            }*/
     }
 }
