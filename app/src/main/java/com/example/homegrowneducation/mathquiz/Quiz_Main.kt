@@ -20,6 +20,7 @@ class Quiz_Main : AppCompatActivity() {
 
         Ereturn.setOnClickListener{
             val intent = Intent(this,MainPage::class.java)
+            startActivity(intent)
         }
         Qadd.setOnClickListener {
             val intent = Intent(this,Quiz_Page::class.java)
