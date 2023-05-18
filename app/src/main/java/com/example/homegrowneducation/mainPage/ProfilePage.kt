@@ -30,15 +30,15 @@ class ProfilePage: AppCompatActivity(){
             startActivity(intent)
         }
 
-        binding.aboutUsArrow.setOnClickListener { view: View ->
+        binding.aboutUsArrow.setOnClickListener {
             view.findNavController().navigate(R.id.action_profilePage_to_aboutUs)
         }
-        binding.myAccountArrow.setOnClickListener { view: View ->
+        binding.myAccountArrow.setOnClickListener {
             val intent = Intent(this, MyAccountActivity::class.java)
             startActivity(intent)
         }
 
-        binding.logoutArrow.setOnClickListener { view: View ->
+        binding.logoutArrow.setOnClickListener {
             auth.signOut()
             Intent(this, LoginActivity::class.java).also {
                 it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK

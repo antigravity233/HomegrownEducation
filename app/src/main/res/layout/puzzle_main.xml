@@ -8,6 +8,29 @@
         android:layout_height="match_parent"
         android:background="@color/bg_puzzle_main_page_color">
 
+        <ImageButton
+            android:id="@+id/puzzle_back_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:alpha="0.75"
+            android:background="@drawable/puzzle_back_shape"
+            android:contentDescription="back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:id="@+id/puzzle_back_icon"
+            android:layout_width="40dp"
+            android:layout_height="39.3dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="45dp"
+            android:contentDescription="back_icon"
+            android:src="@drawable/back_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
         <TextView
             android:id="@+id/puzzle"
             android:layout_width="match_parent"
@@ -33,6 +56,9 @@
             app:layout_constraintTop_toBottomOf="@+id/puzzle"
             app:strokeColor="@color/black"
             app:strokeWidth="2dp">
+
+
+
 
 
             <TextView
