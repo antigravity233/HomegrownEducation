@@ -227,6 +227,11 @@
         android:id="@+id/resetPasswordActivity2"
         android:name="com.example.homegrowneducation.ResetPasswordActivity"
         android:label="ResetPasswordActivity" />
+    <activity
+        android:id="@+id/quiz_Main2"
+        android:name="com.example.homegrowneducation.mathquiz.Quiz_Main"
+        android:label="quiz_main"
+        tools:layout="@layout/quiz_main" />
 
 
 </navigation>

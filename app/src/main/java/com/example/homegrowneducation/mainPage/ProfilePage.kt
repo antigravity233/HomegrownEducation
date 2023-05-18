@@ -25,18 +25,17 @@ class ProfilePage: AppCompatActivity(){
         var binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.backbtn.setOnClickListener {
+            val intent = Intent(this, MainPage::class.java)
+            startActivity(intent)
+        }
+
         binding.aboutUsArrow.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_profilePage_to_aboutUs)
         }
         binding.myAccountArrow.setOnClickListener { view: View ->
             val intent = Intent(this, MyAccountActivity::class.java)
             startActivity(intent)
-
-            binding.backbtn.setOnClickListener { view: View ->
-                view.findNavController().navigate(R.id.action_profilePage_to_main_page)
-            }
-
-
         }
 
         binding.logoutArrow.setOnClickListener { view: View ->
